@@ -1,0 +1,17 @@
+login-page{
+    ion-content{
+       background-color: color($colors, energized) !important;
+    }
+    .button-block{
+        max-width: 350px;
+    }
+    h1{
+        color: color($colors, light);
+    }
+    ion-row{
+        justify-content: center;
+        button{
+            display: block !important;
+        }
+    }
+}

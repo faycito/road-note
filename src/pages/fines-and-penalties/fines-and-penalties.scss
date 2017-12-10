@@ -1,0 +1,41 @@
+fines-and-penalties-page{
+    .fines{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: color($colors, warning);
+        h2{
+            color: white;
+        }
+    }
+    .violation{
+        background-color: #FFEB3B;
+    }
+    .violation-content, .fines-content{
+        font-size: 1.65rem;
+    }
+    .row{
+        padding-left: 0px !important;
+    }
+
+    .row:last-child{
+        border-bottom: 0px !important;
+    }
+    .border-left{
+        border-right: 1px solid black;
+    }
+    .border-bottom{
+        
+            border-bottom: 1px solid black;
+        
+    }
+    .col{
+        padding: 16px !important;
+    }
+
+    .scroll-content{
+        background-color: color($colors, secondary)
+    }
+
+}

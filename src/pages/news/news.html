@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar color="energized">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>News</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+
+        <ion-card *ngFor="let new of news">
+            <ion-card-header text-wrap text-center>
+                    {{ new.title }}                    
+            </ion-card-header>
+            <ion-card-content>
+                    {{ new.description }}
+                    <ion-row>
+                            <ion-col text-right class="news-date">
+                                {{ new.date }} <br/>
+                                {{ new.place }}
+                            </ion-col>
+                        </ion-row>
+            </ion-card-content>
+        </ion-card>
+</ion-content>

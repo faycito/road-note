@@ -1,0 +1,15 @@
+<ion-content>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+        <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input formControlName="username" type="text"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+    
+        <button ion-button full color="primary" [disabled]="!contactForm.valid" style="margin-top: 20px;" type="submit">Authorize</button>        
+    </form>
+</ion-content>

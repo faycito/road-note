@@ -1,0 +1,31 @@
+<ion-header>
+<ion-navbar color="energized">
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Fines And Penalties</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-grid no-padding>
+            <ion-row class="border-bottom" >
+                <ion-col col-6 text-center class="border-left violation">
+                    <h2> VIOLATIONS</h2>
+                </ion-col>
+                <ion-col col-6 text-center class="fines">
+                    <h2> FINES </h2>
+                </ion-col>
+            </ion-row>
+            <ion-row  *ngFor="let penaltie of penalties" padding-left class="border-bottom violation violation-content" >
+                <ion-col col-6  class="border-left" >
+                        {{ penaltie.violation }}
+                </ion-col>
+                <ion-col col-6 text-center class="fines fines-content">
+                        {{ penaltie.fines }}
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
+</ion-content>

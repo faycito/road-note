@@ -1,0 +1,18 @@
+<ion-content>
+    <h1 text-center color="light"> ROAD NOTE </h1>
+    <ion-row>
+        <img [src]="LOGO">
+    </ion-row>
+    <ion-row>
+        <button ion-button color="facebook" block (click)="goToHome()"> 
+            <ion-icon name="logo-facebook" icon-start margin-right> </ion-icon>
+            Log in with Facebook 
+        </button>
+    </ion-row>
+    <ion-row>
+        <button ion-button color="googlePlus" block margin-top (click)="goToHome()"> 
+            <ion-icon name="logo-googleplus" icon-start margin-right></ion-icon>
+             Log in with Google 
+        </button>
+    </ion-row>
+</ion-content>
