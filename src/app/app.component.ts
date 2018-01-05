@@ -10,9 +10,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { HelpPage } from '../pages/help/help';
 import { FinesAndPenaltiesPage } from '../pages/fines-and-penalties/fines-and-penalties';
+import { SendAComplainPage } from '../pages/send-a-complain/send-a-complain';
 
 @Component({
   selector: 'app-main',
@@ -23,7 +23,7 @@ export class MyApp {
 
   rootPage: any = LoginPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   userImg: string = CommonConstants.PATHS.UNKNOWN_USER_IMAGE;
 
@@ -32,12 +32,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Home', component: HomePage },
       { title: 'News', component: NewsPage },
       { title: 'General News', component: GeneralNewsPage },
       { title: 'Road Blockage', component: RoadBlockAgePage },
       { title: 'Fines and Penalties', component: FinesAndPenaltiesPage },
       { title: 'Help', component: HelpPage },
-      { title: 'About Us', component: AboutUsPage }
+      { title: 'About Us', component: AboutUsPage },
+      { title: 'Send a Complain', component: SendAComplainPage }
     ];
 
   }

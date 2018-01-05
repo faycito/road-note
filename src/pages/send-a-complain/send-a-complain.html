@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar color="energized">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Send a Complain </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="complainForm" (ngSubmit)="onSubmit(complainForm.value)">
+        <ion-row color="muted">
+            <ion-col text-center>
+                <h2 color="light"> Compose </h2>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-only clear>
+                    <ion-icon name="md-image"></ion-icon>
+                </button>
+                <button ion-button icon-only clear [disabled]="!complainForm.valid"  type="submit">
+                    <ion-icon name="md-send" ></ion-icon>
+                </button>
+
+            </ion-col>
+        </ion-row>
+        <ion-input formControlName="to" type="text" placeholder='To' margin-left ></ion-input>
+        <ion-input formControlName="subject" type="text" placeholder='Subject' margin-left ></ion-input>
+
+        <ion-textarea formControlName="content" placeholder="Your message..." margin-left></ion-textarea>
+    </form>
+</ion-content>

@@ -16,6 +16,7 @@ import { FinesAndPenaltiesPage } from '../pages/fines-and-penalties/fines-and-pe
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RoadBlockAgePage } from '../pages/road-block/road-blockage';
+import { SendAComplainPage } from '../pages/send-a-complain/send-a-complain';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RoadBlockAgePage } from '../pages/road-block/road-blockage';
     GeneralNewsPage,
     RoadBlockAgePage,
     FinesAndPenaltiesPage,
-    LoginPage
+    LoginPage,
+    SendAComplainPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { RoadBlockAgePage } from '../pages/road-block/road-blockage';
     GeneralNewsPage,
     RoadBlockAgePage,
     FinesAndPenaltiesPage,
-    LoginPage
+    LoginPage,
+    SendAComplainPage
   ],
   providers: [
     StatusBar,

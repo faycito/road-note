@@ -1,0 +1,28 @@
+send-a-complain-page{
+    form{
+        ion-row{
+            background: color($colors, muted);
+            color: white;
+            ion-icon{
+                color: white;
+                top: 15px;
+            }
+            ion-col{
+                h2{
+                    top: 2px;
+                }
+                button{
+                    float: right;
+                }
+            }
+        }
+    }
+
+    ion-input{
+        border-bottom: 1px solid color($colors, muted);
+        padding-top: 10px;
+    }
+    ion-textarea{
+        padding-top: 20px;
+    }
+}
