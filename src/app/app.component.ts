@@ -12,7 +12,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 import { FinesAndPenaltiesPage } from '../pages/fines-and-penalties/fines-and-penalties';
-import { SendAComplainPage } from '../pages/send-a-complain/send-a-complain';
+import { SendReportPage } from '../pages/send-report/send-report';
 
 @Component({
   selector: 'app-main',
@@ -39,7 +39,7 @@ export class MyApp {
       { title: 'Fines and Penalties', component: FinesAndPenaltiesPage },
       { title: 'Help', component: HelpPage },
       { title: 'About Us', component: AboutUsPage },
-      { title: 'Send a Complain', component: SendAComplainPage }
+      { title: 'Send Report', component: SendReportPage }
     ];
 
   }

@@ -4,11 +4,11 @@ import { AlertController } from 'ionic-angular';
 
 
 @Component({
-    selector: 'send-a-complain-page',
-    templateUrl: 'send-a-complain.html'
+    selector: 'send-report-page',
+    templateUrl: 'send-report.html'
 })
 
-export class SendAComplainPage {
+export class SendReportPage {
 
     complainForm: FormGroup;
 

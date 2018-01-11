@@ -7,8 +7,15 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  showCheckBox: boolean = false;
+
+  constructor(
+    public navCtrl: NavController
+  ) {
 
   }
 
+  showItems(){
+    this.showCheckBox = !this.showCheckBox;
+  }
 }

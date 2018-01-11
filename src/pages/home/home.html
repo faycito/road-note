@@ -8,13 +8,20 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-label>No parking</ion-label>
-    <ion-checkbox color="primary" checked="true"></ion-checkbox>
-  </ion-item>
-  <ion-item>
-    <ion-label>Traffic Law</ion-label>
-    <ion-checkbox color="primary" checked="true"></ion-checkbox>
-  </ion-item>
-
+  <ion-row (click)="showItems()">
+    <ion-col text-center>
+        <h2>Legend</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="showCheckBox">
+    <ion-item>
+      <ion-label>No parking</ion-label>
+      <ion-checkbox color="primary" checked="false"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Traffic Law</ion-label>
+      <ion-checkbox color="primary" checked="false"></ion-checkbox>
+    </ion-item>
+  </ion-row>
+    
 </ion-content>
