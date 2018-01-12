@@ -14,4 +14,11 @@ login-page{
             display: block !important;
         }
     }
+
+    @media screen and (max-width: 320px){
+        img{
+            width: 90%;
+            height: 320px !important;
+        }
+    }
 }
